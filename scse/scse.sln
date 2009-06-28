@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "scse_loader", "scse_loader\scse_loader.vcproj", "{C8AF6AF6-21A6-4DCA-BCA7-7ED4944D1F7F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{FB6A5681-7264-4A32-8769-0C14458BF809} = {FB6A5681-7264-4A32-8769-0C14458BF809}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "scse", "scse\scse.vcproj", "{1F8ACFC0-5B51-4818-BA1A-85EDDE629269}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7BE5FF7D-748B-4B80-8E76-535FBD496060} = {7BE5FF7D-748B-4B80-8E76-535FBD496060}
+		{FB6A5681-7264-4A32-8769-0C14458BF809} = {FB6A5681-7264-4A32-8769-0C14458BF809}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "scse_common", "scse_common\scse_common.vcproj", "{FB6A5681-7264-4A32-8769-0C14458BF809}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "scse_lualinker", "scse_lualinker\scse_lualinker.vcproj", "{7BE5FF7D-748B-4B80-8E76-535FBD496060}"
+	ProjectSection(ProjectDependencies) = postProject
+		{FB6A5681-7264-4A32-8769-0C14458BF809} = {FB6A5681-7264-4A32-8769-0C14458BF809}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "scse_data", "scse_data\scse_data.vcproj", "{F308A848-2504-45E2-AD05-C173E7A9C207}"
+EndProject
+Global
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C8AF6AF6-21A6-4DCA-BCA7-7ED4944D1F7F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C8AF6AF6-21A6-4DCA-BCA7-7ED4944D1F7F}.Debug|Win32.Build.0 = Debug|Win32
+		{C8AF6AF6-21A6-4DCA-BCA7-7ED4944D1F7F}.Release|Win32.ActiveCfg = Release|Win32
+		{C8AF6AF6-21A6-4DCA-BCA7-7ED4944D1F7F}.Release|Win32.Build.0 = Release|Win32
+		{1F8ACFC0-5B51-4818-BA1A-85EDDE629269}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1F8ACFC0-5B51-4818-BA1A-85EDDE629269}.Debug|Win32.Build.0 = Debug|Win32
+		{1F8ACFC0-5B51-4818-BA1A-85EDDE629269}.Release|Win32.ActiveCfg = Release|Win32
+		{1F8ACFC0-5B51-4818-BA1A-85EDDE629269}.Release|Win32.Build.0 = Release|Win32
+		{FB6A5681-7264-4A32-8769-0C14458BF809}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FB6A5681-7264-4A32-8769-0C14458BF809}.Debug|Win32.Build.0 = Debug|Win32
+		{FB6A5681-7264-4A32-8769-0C14458BF809}.Release|Win32.ActiveCfg = Release|Win32
+		{FB6A5681-7264-4A32-8769-0C14458BF809}.Release|Win32.Build.0 = Release|Win32
+		{7BE5FF7D-748B-4B80-8E76-535FBD496060}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7BE5FF7D-748B-4B80-8E76-535FBD496060}.Debug|Win32.Build.0 = Debug|Win32
+		{7BE5FF7D-748B-4B80-8E76-535FBD496060}.Release|Win32.ActiveCfg = Release|Win32
+		{7BE5FF7D-748B-4B80-8E76-535FBD496060}.Release|Win32.Build.0 = Release|Win32
+		{F308A848-2504-45E2-AD05-C173E7A9C207}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F308A848-2504-45E2-AD05-C173E7A9C207}.Debug|Win32.Build.0 = Debug|Win32
+		{F308A848-2504-45E2-AD05-C173E7A9C207}.Release|Win32.ActiveCfg = Release|Win32
+		{F308A848-2504-45E2-AD05-C173E7A9C207}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

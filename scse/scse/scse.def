@@ -1,0 +1,4 @@
+LIBRARY	"scse"
+
+EXPORTS
+luaopen_scse
