@@ -40,7 +40,6 @@ GetProcAddress(lib, "?lua_resume@@YAHPAUlua_State@@H@Z"); - this is how to get a
 
 
 Function for testing recursion through Lua state:
-
 static int scse_fib (lua_State *L)
 {
     lua_Number n = lua_tonumber(L, 1);
@@ -68,3 +67,8 @@ static int scse_fib (lua_State *L)
     lua_pushnumber(L, tmp);
     return 1;
 }
+
+Type in game console these strings for test io lib:
+lua myfile = io.open('myfile.txt', 'w')
+lua myfile:write('Hello World!')
+lua myfile:close()

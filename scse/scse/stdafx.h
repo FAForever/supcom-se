@@ -24,3 +24,4 @@
 #include "..\scse_lualinker\LuaLinker.h"
 #include "..\scse_lualinker\lua.h"
 #include "..\scse_lualinker\lauxlib.h"
+#include "..\scse_lualinker\lualib.h"

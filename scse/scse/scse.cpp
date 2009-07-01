@@ -15,19 +15,9 @@ static int scse_version (lua_State *L)
     return 1;
 }
 
-// Return the elapsed wall-clock time in seconds since the start of the process.
-//
-// Return to lua values:
-// 1. Number value with the elapsed wall-clock time in seconds since the start of the process.
-static int scse_clock (lua_State *L)
-{
-    lua_pushnumber(L, (lua_Number)clock() / (lua_Number)CLOCKS_PER_SEC);
-    return 1;
-}
-
-static const luaL_reg scselib[] = {
+static luaL_reg scselib[] = {
     {"version", scse_version},
-    {"clock", scse_clock},
+    {"luaopen_io", NULL}, // address sets after linking
     {NULL, NULL}
 };
 
@@ -41,8 +31,13 @@ SCSE_API int luaopen_scse(lua_State *L)
     if(LuaLinker::Link())
     {
         log.LogMessage("Lua linker functions successefully linked with Supreme Commander lua functions.\n");
+
+        // Set address of luaopen_io function in scselib array
+        scselib[1].func = luaopen_io;
+
         // Open scse library
         luaL_openlib(L, SCSE_SCSELIBNAME, scselib, 0);
+
         log.LogMessage("SCSE library successefully opened.\n");
     }
     else

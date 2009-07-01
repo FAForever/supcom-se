@@ -3,7 +3,12 @@
 # global is accessed. But when loadlib register table of lib functions it checks whether
 # table already exists and causes error.
 
-open_scse = loadlib("scse.dll", "luaopen_scse")
-open_scse()
+if loadlib ~= nil then
+    local open_scse = loadlib("scse.dll", "luaopen_scse")
+    open_scse()
 
-WARN(scse.version())
+    WARN(scse.version())
+
+    # Open io and os libs
+    scse.luaopen_io()
+end

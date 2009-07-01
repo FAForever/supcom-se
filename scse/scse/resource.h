@@ -1,8 +1,7 @@
-// See copyright notice in scse_copyright.txt
-
 //{{NO_DEPENDENCIES}}
 // Microsoft Visual C++ generated include file.
 // Used by scse.rc
+//
 
 // Next default values for new objects
 // 

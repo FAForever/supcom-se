@@ -158,6 +158,22 @@
 				>
 			</File>
 			<File
+				RelativePath=".\ldebug.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\ldo.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\liolib.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\lstate.cpp"
+				>
+			</File>
+			<File
 				RelativePath=".\LuaLinker.cpp"
 				>
 			</File>
@@ -193,6 +209,10 @@
 			</File>
 			<File
 				RelativePath=".\lua.h"
+				>
+			</File>
+			<File
+				RelativePath=".\lualib.h"
 				>
 			</File>
 			<File

@@ -2,4 +2,4 @@
 
 #pragma once
 
-#define SCSE_VERSION "Supreme Commander Script Extender 1.0.0.1 by Mesenion."
+#define SCSE_VERSION "Supreme Commander Script Extender 1.0.0.2 by Mesenion."
